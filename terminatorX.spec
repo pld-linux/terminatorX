@@ -15,7 +15,6 @@ Source0:	http://terminatorx.cx/dist/%{name}-%{version}.tar.gz
 Patch0:		%{name}-fixes.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://terminatorx.cx/
-BuildRequires:	XFree86-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	audiofile-devel
 BuildRequires:	gtk+2-devel
@@ -43,6 +42,13 @@ plugin effects), a sequencer and MIDI interface - all accessible
 through an easy-to-use gtk+ GUI.
 
 %description -l pl
+termintorX to syntezatro audio pracuj±cy w czasie rzeczywistym
+pozwalaj±cy skreczowaæ cyfrowo spróbkowane dane audio (*.wav, *.au,
+*.ogg, *.mp3, etc.) tak jak to robi± dj hiphop'owi na p³ytach 
+winylowych. Jego opcje to zwielokrotniony ???, efekty w czasie
+rzeczywistym (jak równierz wbudowane jako wtyczki efekty LADSPA),
+sequencer oraz interfejs MIDI - wszystko dostêpne poprzez ³atwe
+w u¿yciu GUI napisane w gtk+.
 
 %prep
 %setup -q
