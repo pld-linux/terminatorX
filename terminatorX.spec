@@ -24,10 +24,10 @@ BuildRequires:	jack-audio-connection-kit-devel >= 0.66
 BuildRequires:	ladspa-devel
 BuildRequires:	libglade2-devel
 BuildRequires:	liblrdf-devel
+BuildRequires:	libmad-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	libxml2-devel
-BuildRequires:	mad-devel
 Requires:	mpg123
 Requires:	sox
 Requires:	vorbis-tools
