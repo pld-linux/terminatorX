@@ -1,0 +1,19 @@
+diff -aurN terminatorX-3.80.orig/gnome-support/terminatorX.desktop terminatorX-3.80/gnome-support/terminatorX.desktop
+--- terminatorX-3.80.orig/gnome-support/terminatorX.desktop	2002-09-13 20:45:12.000000000 +0200
++++ terminatorX-3.80/gnome-support/terminatorX.desktop	2003-07-03 19:03:39.000000000 +0200
+@@ -1,7 +1,11 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ Name=terminatorX
+-Type=Application
+-Comment=sophisticated scratching and audio tool
+-Exec=terminatorX
++Name[pl]=terminatorX
++Comment=Sophisticated scratching and audio tool
++Comment[pl]=Wyrafinowany program do "skreczownia" oraz narzędzie audio
++Exec=/usr/bin/terminatorX
+ Icon=terminatorX-app.png
+-
++Terminal=0
++Type=Application
++Categories=Application;AudioVideo;
