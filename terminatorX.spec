@@ -1,10 +1,9 @@
 # TODO:
 # - place docs correctly (maybe ;)
-# - pl desc
 # - check BR and R
 #
 Summary:	Realtime audio synthesizer
-Summary(pl):	Syntezator audio czasu rzeczywistego
+Summary(pl):	Syntezator d¼wiêku czasu rzeczywistego
 Name:		terminatorX
 Version:	3.80
 Release:	0.1
@@ -17,6 +16,8 @@ Patch1:		%{name}-desktop.patch
 URL:		http://terminatorx.cx/
 BuildRequires:	alsa-lib-devel
 BuildRequires:	audiofile-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+2-devel
 BuildRequires:	ladspa-devel
 BuildRequires:	libglade2-devel
@@ -30,7 +31,6 @@ Requires:	sox
 Requires:	vorbis-tools
 Requires(post,postun):	scrollkeeper
 Requires(post,postun):	/sbin/ldconfig
-Requires(post):	GConf2 >= 2.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,13 +42,13 @@ plugin effects), a sequencer and MIDI interface - all accessible
 through an easy-to-use gtk+ GUI.
 
 %description -l pl
-termintorX to syntezatro audio pracuj±cy w czasie rzeczywistym
-pozwalaj±cy skreczowaæ cyfrowo spróbkowane dane audio (*.wav, *.au,
-*.ogg, *.mp3, etc.) tak jak to robi± dj hiphop'owi na p³ytach 
-winylowych. Jego opcje to zwielokrotniony ???, efekty w czasie
-rzeczywistym (jak równierz wbudowane jako wtyczki efekty LADSPA),
-sequencer oraz interfejs MIDI - wszystko dostêpne poprzez ³atwe
-w u¿yciu GUI napisane w gtk+.
+termintorX to syntezator d¼wiêku pracuj±cy w czasie rzeczywistym,
+pozwalaj±cy skreczowaæ na cyfrowo spróbkowanych danych d¼wiêkowych
+(*.wav, *.au, *.ogg, *.mp3, etc.) tak jak to robi± DJ-e hiphopowi na
+p³ytach winylowych. Jego mo¿liwo¶ci to wiele talerzy, efekty w czasie
+rzeczywistym (wbudowane, jak równie¿ wtyczki efekty LADSPA), sequencer
+oraz interfejs MIDI - wszystko dostêpne poprzez ³atwe w u¿yciu GUI
+napisane w gtk+.
 
 %prep
 %setup -q
@@ -88,7 +88,6 @@ scrollkeeper-update
 %defattr(644,root,root,755)
 %doc ChangeLog README AUTHORS NEWS THANKS TODO README.GNOME README.PERFORMANCE
 %attr(755,root,root) %{_bindir}/*
-%dir %{_datadir}/%{name}
 %{_mandir}/man1/*
 %{_datadir}/mime-info/*
 %{_datadir}/%{name}
