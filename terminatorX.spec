@@ -41,7 +41,7 @@ terminatorX is a realtime audio synthesizer that allows you to
 etc.) the way hiphop-DJs scratch on vinyl records. It features
 multiple turntables, realtime effects (buit-in as well as LADSPA
 plugin effects), a sequencer and MIDI interface - all accessible
-through an easy-to-use gtk+ GUI.
+through an easy-to-use GTK+ GUI.
 
 %description -l pl
 termintorX to syntezator d¼wiêku pracuj±cy w czasie rzeczywistym,
@@ -50,7 +50,7 @@ pozwalaj±cy skreczowaæ na cyfrowo spróbkowanych danych d¼wiêkowych
 p³ytach winylowych. Jego mo¿liwo¶ci to wiele talerzy, efekty w czasie
 rzeczywistym (wbudowane, jak równie¿ wtyczki efekty LADSPA), sequencer
 oraz interfejs MIDI - wszystko dostêpne poprzez ³atwe w u¿yciu GUI
-napisane w gtk+.
+napisane w GTK+.
 
 %prep
 %setup -q
