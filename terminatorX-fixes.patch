@@ -1,61 +1,15 @@
-diff -aurN terminatorX-3.80.orig/configure.in terminatorX-3.80/configure.in
---- terminatorX-3.80.orig/configure.in	2003-03-31 20:36:26.000000000 +0200
-+++ terminatorX-3.80/configure.in	2003-07-03 19:15:15.000000000 +0200
-@@ -35,14 +35,14 @@
- AC_PROG_LN_S
- AC_PROG_RANLIB
- 
--OPTION_SOX="no"
--OPTION_MPG123="no"
-+OPTION_SOX="yes"
-+OPTION_MPG123="yes"
- OPTION_MAD="no"
--OPTION_OGG123="no"
-+OPTION_OGG123="yes"
- OPTION_VORBIS="no"
- OPTION_AUDIOFILE="no"
- OPTION_WAV="no"
--OPTION_GNOME="no"
-+OPTION_GNOME="yes"
- OPTION_SCHEDULER="no"
- OPTION_ALSAMIDI="no"
- OPTION_LEGACY="no"
-@@ -404,25 +404,6 @@
- dnl 	AC_DEFINE(USE_DGA2)
- dnl fi
- 
--AC_MSG_CHECKING(for GNOME)
--	AC_MSG_RESULT([in progress])
--	AC_CHECK_PROG(gnomepresent, gnome-name-service, yes, no)
--	if test "$gnomepresent" = yes; then
--		AC_CHECK_PROG(gnomeconfig, gnome-config, yes)
--		if test "$gnomeconfig" = yes; then
--			gnomedatadir=`gnome-config --datadir`
--		else
--			gnomedatadir=${datadir}
--		fi
--		AC_SUBST(gnomedatadir)
--		AM_CONDITIONAL(GNOMEpresent, test "$gnomepresent" = yes)
--   		AC_MSG_RESULT([Found GNOME - installing terminatorX.desktop.])
--		OPTION_GNOME="yes"
--    	else
--   		AC_MSG_RESULT([GNOME not found.])
--    	fi
--
--
- dnl Detecting libxml. Based on dia's test.
- found_libxml=false
- 
-diff -aurN terminatorX-3.80.orig/gnome-support/Makefile.am terminatorX-3.80/gnome-support/Makefile.am
---- terminatorX-3.80.orig/gnome-support/Makefile.am	2002-11-24 22:48:59.000000000 +0100
-+++ terminatorX-3.80/gnome-support/Makefile.am	2003-07-03 19:22:58.000000000 +0200
-@@ -6,9 +6,7 @@
+diff -aurN terminatorX-3.81.orig/gnome-support/Makefile.am terminatorX-3.81/gnome-support/Makefile.am
+--- terminatorX-3.81.orig/gnome-support/Makefile.am	2002-11-24 22:40:00.000000000 +0100
++++ terminatorX-3.81/gnome-support/Makefile.am	2003-08-24 18:51:49.000000000 +0200
+@@ -5,10 +5,8 @@
+ 	tx-gnome-uninstall\
  	terminatorX.desktop\
  	README.GNOME
- 
+-
 -if GNOMEpresent
 -gnomedir=@gnomedatadir@
 -gnomeappdir=$(gnomedir)/gnome/apps/Multimedia
++	
 +gnomeappdir=$(desktopdir)
  gnomeapp_DATA=terminatorX.desktop
  
