@@ -1,16 +1,17 @@
 # TODO:
 # - place docs correctly (maybe ;)
 # - check BR and R
+# - bconds  (alsa, oss, etc.)
 #
 Summary:	Realtime audio synthesizer
 Summary(pl):	Syntezator d¼wiêku czasu rzeczywistego
 Name:		terminatorX
-Version:	3.80
+Version:	3.81
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://terminatorx.cx/dist/%{name}-%{version}.tar.gz
-# Source0-md5:	04ad737a0b555ea869c27960088a7872
+# Source0-md5:	a16839184500afd74467e49a2efe6a5d
 Patch0:		%{name}-fixes.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://terminatorx.cx/
@@ -19,6 +20,7 @@ BuildRequires:	audiofile-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel
+BuildRequires:	jack-audio-connection-kit-devel >= 0.66
 BuildRequires:	ladspa-devel
 BuildRequires:	libglade2-devel
 BuildRequires:	liblrdf-devel
@@ -60,8 +62,11 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
+
+# Due to possible security risk build by default without capabilities
 %configure \
-	--with-docdir=%{_datadir}
+	--with-docdir=%{_datadir} \
+	--disable-capabilities
 
 %{__make}
 
