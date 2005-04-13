@@ -1,24 +1,32 @@
-diff -aurN terminatorX-3.81.orig/gnome-support/Makefile.am terminatorX-3.81/gnome-support/Makefile.am
---- terminatorX-3.81.orig/gnome-support/Makefile.am	2002-11-24 22:40:00.000000000 +0100
-+++ terminatorX-3.81/gnome-support/Makefile.am	2003-08-24 18:51:49.000000000 +0200
-@@ -5,10 +5,8 @@
+diff -aurN terminatorX-3.82.orig/gnome-support/Makefile.am terminatorX-3.82/gnome-support/Makefile.am
+--- terminatorX-3.82.orig/gnome-support/Makefile.am	2002-11-24 22:48:59.000000000 +0100
++++ terminatorX-3.82/gnome-support/Makefile.am	2005-04-13 21:15:02.000000000 +0200
+@@ -1,22 +1,15 @@
+ EXTRA_DIST=terminatorX-app.png\
+-	terminatorX-mime.png\
+-	terminatorX.mime\
++	gnome-mime-application-x-terminatorX.png\
+ 	tx-gnome-install\
  	tx-gnome-uninstall\
  	terminatorX.desktop\
  	README.GNOME
--
+ 
 -if GNOMEpresent
 -gnomedir=@gnomedatadir@
 -gnomeappdir=$(gnomedir)/gnome/apps/Multimedia
-+	
 +gnomeappdir=$(desktopdir)
  gnomeapp_DATA=terminatorX.desktop
  
- mimetypedir=$(gnomedir)/mime-info
-@@ -16,7 +14,3 @@
+-mimetypedir=$(gnomedir)/mime-info
+-mimetype_DATA=terminatorX.keys terminatorX.mime
++pixmapdir=$(pixmapsdir)
++pixmap_DATA=terminatorX-app.png
  
- pixmapdir=$(gnomedir)/pixmaps
- pixmap_DATA=terminatorX-app.png terminatorX-mime.png
+-pixmapdir=$(gnomedir)/pixmaps
+-pixmap_DATA=terminatorX-app.png terminatorX-mime.png
 -
 -endif
 -
 -	
++icondir=$(iconsdir)
++icon_DATA=gnome-mime-application-x-terminatorX.png

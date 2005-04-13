@@ -1,19 +1,18 @@
-diff -aurN terminatorX-3.80.orig/gnome-support/terminatorX.desktop terminatorX-3.80/gnome-support/terminatorX.desktop
---- terminatorX-3.80.orig/gnome-support/terminatorX.desktop	2002-09-13 20:45:12.000000000 +0200
-+++ terminatorX-3.80/gnome-support/terminatorX.desktop	2003-07-03 19:03:39.000000000 +0200
-@@ -1,7 +1,11 @@
+diff -aurN terminatorX-3.82.orig/gnome-support/terminatorX.desktop terminatorX-3.82/gnome-support/terminatorX.desktop
+--- terminatorX-3.82.orig/gnome-support/terminatorX.desktop	2004-03-26 20:13:24.000000000 +0100
++++ terminatorX-3.82/gnome-support/terminatorX.desktop	2005-04-13 21:06:26.000000000 +0200
+@@ -1,10 +1,13 @@
  [Desktop Entry]
 +Encoding=UTF-8
+ Exec=terminatorX
  Name=terminatorX
--Type=Application
--Comment=sophisticated scratching and audio tool
--Exec=terminatorX
-+Name[pl]=terminatorX
-+Comment=Sophisticated scratching and audio tool
-+Comment[pl]=Wyrafinowany program do "skreczownia" oraz narzędzie audio
-+Exec=/usr/bin/terminatorX
+ GenericName=Virtual turntable
+ Comment=Versatile DJ scratching and mixing application.
++Comment[pl]=Wyrafinowany program do "skreczownia" oraz miksowania
+ Terminal=false
+ Type=Application
++MimeType=application/x-terminatorX
  Icon=terminatorX-app.png
--
-+Terminal=0
-+Type=Application
-+Categories=Application;AudioVideo;
+-Categories=Application;AudioVideo;
++Categories=GTK;Audio;
+ StartupNotify=true
