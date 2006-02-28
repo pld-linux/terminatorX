@@ -57,7 +57,7 @@ napisane w GTK+.
 
 mv gnome-support/terminatorX-mime.png \
 	gnome-support/gnome-mime-application-x-terminatorX.png
-	
+
 %build
 %{__aclocal}
 %{__autoconf}
