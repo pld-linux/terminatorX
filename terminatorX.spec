@@ -104,7 +104,7 @@ EOF
 %doc ChangeLog README AUTHORS NEWS THANKS TODO README.PERFORMANCE
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{?with_gnome:%{_iconsdir}/gnome/48x48/mimetypes/*.png}
 %{_mandir}/man1/*
 %{_omf_dest_dir}/%{name}
