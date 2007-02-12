@@ -2,7 +2,7 @@
 %bcond_without	gnome		# for non-gnomers
 #
 Summary:	Realtime audio synthesizer
-Summary(pl):	Syntezator d¼wiêku czasu rzeczywistego
+Summary(pl.UTF-8):   Syntezator dÅºwiÄ™ku czasu rzeczywistego
 Name:		terminatorX
 Version:	3.82
 Release:	1
@@ -41,13 +41,13 @@ multiple turntables, realtime effects (buit-in as well as LADSPA
 plugin effects), a sequencer and MIDI interface - all accessible
 through an easy-to-use GTK+ GUI.
 
-%description -l pl
-termintorX to syntezator d¼wiêku pracuj±cy w czasie rzeczywistym,
-pozwalaj±cy skreczowaæ na cyfrowo spróbkowanych danych d¼wiêkowych
-(*.wav, *.au, *.ogg, *.mp3, etc.) tak jak to robi± DJ-e hiphopowi na
-p³ytach winylowych. Jego mo¿liwo¶ci to wiele talerzy, efekty w czasie
-rzeczywistym (wbudowane, jak równie¿ wtyczki efekty LADSPA), sequencer
-oraz interfejs MIDI - wszystko dostêpne poprzez ³atwe w u¿yciu GUI
+%description -l pl.UTF-8
+termintorX to syntezator dÅºwiÄ™ku pracujÄ…cy w czasie rzeczywistym,
+pozwalajÄ…cy skreczowaÄ‡ na cyfrowo sprÃ³bkowanych danych dÅºwiÄ™kowych
+(*.wav, *.au, *.ogg, *.mp3, etc.) tak jak to robiÄ… DJ-e hiphopowi na
+pÅ‚ytach winylowych. Jego moÅ¼liwoÅ›ci to wiele talerzy, efekty w czasie
+rzeczywistym (wbudowane, jak rÃ³wnieÅ¼ wtyczki efekty LADSPA), sequencer
+oraz interfejs MIDI - wszystko dostÄ™pne poprzez Å‚atwe w uÅ¼yciu GUI
 napisane w GTK+.
 
 %prep
