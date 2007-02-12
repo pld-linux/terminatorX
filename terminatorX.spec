@@ -2,7 +2,7 @@
 %bcond_without	gnome		# for non-gnomers
 #
 Summary:	Realtime audio synthesizer
-Summary(pl.UTF-8):   Syntezator dźwięku czasu rzeczywistego
+Summary(pl.UTF-8):	Syntezator dźwięku czasu rzeczywistego
 Name:		terminatorX
 Version:	3.82
 Release:	1
